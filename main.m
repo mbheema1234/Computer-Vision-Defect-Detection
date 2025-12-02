@@ -51,7 +51,6 @@ end
 good1 = getAvg('Yellow4.jpeg');
 good2 = getAvg('Yellow5.jpeg');
 good3 = getAvg('Yellow 6.png'); 
-%Yellow 6.png : Image from shutterstock. To include bright images as well. 
 % All inclusive cases then
 
 bad1  = getAvg('green1.png');
@@ -74,7 +73,10 @@ Labels = ["Good"; "Good"; "Good"; "Bad"; "Bad"; "Bad"];
 %Image testing:
 
 %Load the image
-k = imread('Yellow2.heic');
+%k = imread('Yellow 7.heic');
+%k=imread ('Yellow5.jpeg');
+%k=imread('Green5.png');
+k=imread('Green2.jpeg');
 
 %Find the average colored image using fspecial and imfilter.
 lb_avg_filter = fspecial('average', [3 3]);
